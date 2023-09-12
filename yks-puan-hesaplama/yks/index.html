@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YKS Deneme</title>
+    <!-- favicon css -->
+    <link rel="shortcut icon" href="../img/favicon.jpeg" type="image/x-icon">
+    <!-- font-awesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- navbar başlangıç -->
+
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../yks/index.html">
+            <img src="../img/yksicon.jpg" class="anaic" alt="icon">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+             
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- navbar bitiş -->
+
+      
+    <!-- yks kısımlar başlangıç -->
+
+      <div class="kisimlar">
+
+        <div class="row">
+
+            <div class="turkce col-lg-3 col-md-6">
+
+                    <h1 class="text-primary">TÜRKÇE</h1>
+                    <input class="text-center mb-2" type="text" id="trdog" placeholder="DOĞRU">
+                    <input class="text-center mb-2"  type="text" id="tryan" placeholder="YANLIŞ">
+                    <input class="text-center mb-2"  type="text" placeholder="BOŞ">
+                    <p class="netler mb-2 text-warning fs-4">NET</p>
+                    <p class="netler mb-2 fs-2 text-warning" id="trnet">00</p>
+        
+            </div>
+
+            <div class="sosyal col-lg-3 col-md-6">
+
+                <h1 class="text-primary">SOSYAL B.</h1>
+                <input class="text-center mb-2"  type="text" id="sosdog" placeholder="DOĞRU">
+                <input class="text-center mb-2"  type="text" id="sosyan" placeholder="YANLIŞ">
+                <input class="text-center mb-2"  type="text" placeholder="BOŞ">
+                <p class="netler mb-2 text-warning">NET</p>
+                <p class="netler mb-2 text-warning fs-2" id="sosnet">00</p>
+    
+        </div>
+
+        <div class="matematik col-lg-3 col-md-6">
+
+            <h1 class="text-primary">MATEMATİK</h1>
+            <input class="text-center mb-2"  type="text" id="matdog" placeholder="DOĞRU">
+            <input class="text-center mb-2"  type="text" id="matyan" placeholder="YANLIŞ">
+            <input class="text-center mb-2"  type="text" placeholder="BOŞ">
+            <p class="netler mb-2 text-warning">NET</p>
+            <p class="netler mb-2 text-warning fs-2" id="matnet">00</p>
+
+    </div>
+
+    <div class="fenbilgisi col-lg-3 col-md-6">
+
+        <h1 class="text-primary">FEN B.</h1>
+        <input class="text-center mb-2"  type="text" id="fendog" placeholder="DOĞRU">
+        <input class="text-center mb-2"  type="text" id="fenyan" placeholder="YANLIŞ">
+        <input class="text-center mb-2"  type="text" placeholder="BOŞ">
+        <p class="netler mb-2 text-warning">NET</p>
+        <p class="netler mb-2 text-warning fs-2" id="fennet">00</p>
+
+</div>
+
+        </div>
+
+
+      </div>
+
+
+
+
+
+    <!-- yks kısımlar bitiş -->
+    
+
+
+
+
+
+
+
+
+    <div class="buton">
+
+        <p class="netler mb-2 text-warning fs-4">TOPLAM NET</p>
+        <p class="netler mb-2 text-dark fs-2" id="topnet">000</p>
+
+        <button type="button" class="btn btn-success bg-dark" id="hesap" onclick="hesap()">HESAPLA</button>
+
+        <p class="netler mb-2 text-warning fs-4">TOPLAM PUAN</p>
+        <p class="netler mb-2 text-dark fs-2" id="toppuan">000</p>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>    
+
+    <script>
+        AOS.init();
+      </script>
+
+      <!-- bootstrap js -->
+      <script src="../bootstrap/bootstrap.bundle.min.js"></script>
+
+      <!-- my js -->
+      <script src="app.js"></script>
+
+
+
+
+    
+</body>
+</html>

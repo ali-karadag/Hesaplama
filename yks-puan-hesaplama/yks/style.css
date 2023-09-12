@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Montserrat:wght@300&family=Rubik&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+html {
+    height: 100%;
+}
+.anaic {
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+}
+/* kısımlar başlangıç */
+
+.kisimlar {
+    margin-top: 150px;
+}
+
+
+/* buton kısmı başlangıç */
+.buton {
+    text-align: center;
+    border: 2px solid red;
+    padding: 10px;
+    overflow: hidden;
+    background-image: linear-gradient(rgb(46, 44, 44, 0.6), rgb(29, 28, 28, 0.6)), url(../img/buton.png);
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+}
+
+input {
+    display: block;
+}
+.turkce {
+    overflow: hidden;
+    height: 350px;
+    background-image: linear-gradient(rgb(46, 44, 44, 0.6), rgb(29, 28, 28, 0.6)), url(../img/card4.webp);
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+}
+.sosyal{
+    overflow: hidden;
+    height: 350px;
+    background-image: linear-gradient(rgb(46, 44, 44, 0.6), rgb(29, 28, 28, 0.6)), url(../img/card2.webp);
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+}
+.matematik {
+    overflow: hidden;
+    height: 350px;
+    background-image: linear-gradient(rgb(46, 44, 44, 0.6), rgb(29, 28, 28, 0.6)), url(../img/card3.webp);
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+}
+.fenbilgisi {
+    overflow: hidden;
+    height: 350px;
+    background-image: linear-gradient(rgb(46, 44, 44, 0.6), rgb(29, 28, 28, 0.6)), url(../img/card4.webp);
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+}
